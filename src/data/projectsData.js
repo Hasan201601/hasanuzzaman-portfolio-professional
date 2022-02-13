@@ -1,4 +1,4 @@
-export const products = [
+export const projects = [
     {
         id: 1,
         img1: 'https://i.ibb.co/FJ5xrqF/screenbud-845b1857-28b1-4d09-9754-ce2f507c6faa.png',
@@ -15,7 +15,8 @@ export const products = [
             feature2: 'User Dashboard for every user.',
             feature3: 'Content management system for admin.'
         },
-        tech: 'HTML, CSS, React Router, Mongodb, Express, Firebase, Heroku'
+        tech: 'HTML, CSS, React Router, Mongodb, Express, Firebase, Heroku',
+        category: "mern"
 
     },
     {
@@ -34,7 +35,8 @@ export const products = [
             feature2: 'Every user will see their own orders in my orders route.',
             feature3: 'Content management system for admin.'
         },
-        tech: 'HTML, CSS, Bootstrap, React.js React Router, Mongodb, Express, Firebase,Heroku'
+        tech: 'HTML, CSS, Bootstrap, React.js React Router, Mongodb, Express, Firebase,Heroku',
+        category: "mern"
 
     },
     {
@@ -52,7 +54,8 @@ export const products = [
             feature2: 'Display logged in user information in header.',
             feature3: 'Services boking option for logged in users only.'
         },
-        tech: 'React Router, Firebase'
+        tech: 'React Router, Firebase',
+        category: "react"
     }
 ];
 

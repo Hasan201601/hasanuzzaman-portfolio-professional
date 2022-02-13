@@ -22,7 +22,6 @@
     font-size: 2rem;
     transition: all .5s ease-out;
 }
-  
 .nav-menu {
     width: 250px;
     height: 100vh;
@@ -32,14 +31,12 @@
     top: 0;
     left: -100%;
     z-index: 9999; 
-}
-  
+} 
 .nav-menu.active {
     left: 0;
     transition: all .25s ease-in;
     z-index: 9999;
 }
-  
 .nav-text {
     display: flex;
     color: white;
@@ -48,8 +45,7 @@
     padding: 8px;
     list-style: none;
     height: 60px;
-}
-  
+} 
 .nav-text a {
     text-decoration: none;
     color: #f5f5f5;
@@ -61,17 +57,15 @@
     padding: 0 16px;
     border-radius: 4px;
 }
-  
 .nav-text a:hover {
     background-color: #1b2531;
 }
-  
 .nav-menu-items {
     width: 100%;
     padding: 10px;
     margin: 0;
 }
-  
+
 .navbar-toggle {
     width: 100%;
     height: 80px;
@@ -233,6 +227,7 @@ span {
   }
   
 
+
 /* About Section */
 .a {
     height: 100vh;
@@ -275,7 +270,7 @@ span {
     object-fit: cover;
   }
   
-  .a-award-img {
+  .a-info-img {
     width: 120px;
     height: 120px;
     border-radius: 20px;
@@ -293,21 +288,20 @@ span {
       font-weight: 300;
   }
   
-  .a-award{
+  .a-info{
       margin-top: 50px;
       display: flex;
       align-items: center;
       justify-content: space-between;
   }
-  
-  .a-award-texts{
-      width: 70%;
-  }
-  
-  .a-award-title{
+  .a-info-title{
       font-weight: bold;
       color: #555;
       margin-bottom: 10px;
+  }
+  .a-info-link{
+    text-decoration: none;
+    color: inherit;
   }
   
   @media screen and (max-width:480px) {
@@ -325,7 +319,7 @@ span {
         height: 30vh;
       }
   
-      .a-card.bg, .a-award {
+      .a-card.bg, .a-info {
         display: none;
       }
   
@@ -343,25 +337,33 @@ span {
     text-align: center;
     min-height: 90vh;
   }
+  .ph{
+    padding: 50px 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-height: 70vh;
+  }
   
   .pl-texts {
     width: 60%;
   }
   
   .pl-title {
-    font-size: 50px;
+    font-size: 32px;
     font-weight: 600;
   }
   
   .pl-desc {
-    margin: 20px 0px;
+    margin: 10px 0px;
   }
   
   .pl-list {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
   }
   
   @media screen and (max-width: 480px) {
@@ -385,7 +387,6 @@ span {
 .c {
   min-height: 80vh;
   position: relative;
-  margin-bottom: 20px;
 }
 .c-bg {
   width: 20px;
@@ -396,6 +397,8 @@ span {
 .c-wrapper {
   padding: 50px;
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .c-left {
   flex: 1;
@@ -498,7 +501,7 @@ button {
 }
 .p-browser {
     height: 20px;
-    background-color: rgb(196, 196, 196);
+    background-color: #59b256;
     display: flex;
     align-items: center;
     position: sticky;
@@ -535,6 +538,16 @@ button {
     }
 }
 
+/* filter menu */
+.menu-tab-btn{
+  margin-left: 12px;
+  padding: 10px 20px;
+  text-transform: capitalize;
+}
+.menu-tab-btn:active{
+  background-color: #1b2531;
+  color: white;
+}
 
 /* Project details */
 .pd {
@@ -555,10 +568,11 @@ button {
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    margin: 3px;
+    margin: 5px;
+    background-color: rgb(196, 195, 195);
     
 }
-.circle-1{
+/* .circle-1{
     background-color: green;
 }
 .circle-2{
@@ -566,7 +580,7 @@ button {
 }
 .circle-3{
     background-color: yellow;
-} 
+}  */
 .pd-img {
     width: 60%;
     height: 40vh;
@@ -616,4 +630,8 @@ button {
     flex-direction: column;
     margin-top: 10px;
     padding: 10px 0;
+}
+.f-a{
+  margin: 0;
+  padding: 0;
 }

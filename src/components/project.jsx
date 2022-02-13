@@ -1,8 +1,7 @@
 import { Link } from "react-router-dom";
 
-const Product = (props) => {
+const Project = (props) => {
   const { item } = props;
-  console.log(item)
   return (
     <div className="p">
       <div className="p-browser">
@@ -17,4 +16,4 @@ const Product = (props) => {
   );
 };
 
-export default Product;
+export default Project;

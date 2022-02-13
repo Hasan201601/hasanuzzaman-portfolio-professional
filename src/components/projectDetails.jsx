@@ -19,7 +19,7 @@ import 'swiper/components/pagination/pagination.min.css'
 import SwiperCore, {
     Pagination, Navigation
 } from 'swiper';
-import { products } from '../data/projectsData';
+import { projects } from '../data/projectsData';
 
 // install Swiper modules
 SwiperCore.use([Pagination, Navigation]);
@@ -27,8 +27,8 @@ SwiperCore.use([Pagination, Navigation]);
 const ProjectDetail = () => {
     const { id } = useParams()
     console.log(id)
-    console.log(products)
-    const project = products.find(item => item.id === parseInt(id))
+    console.log(projects)
+    const project = projects.find(item => item.id === parseInt(id))
     console.log(project)
     const theme = useContext(ThemeContext);
     const darkMode = theme.state.darkMode;
@@ -38,10 +38,10 @@ const ProjectDetail = () => {
                 backgroundColor: darkMode ? "#1b1b1b" : "#d6e7dd",
                 border: darkMode ? "2px solid #1a1a1a" : "2px solid rgb(196, 195, 195)"
             }} >
-                <div className="pd-browser" style={{ backgroundColor: darkMode ? "rgb(196,196,196)" : "#59b256" }}>
-                    <div className="pd-circle circle-1"></div>
-                    <div className="pd-circle circle-2"></div>
-                    <div className="pd-circle circle-3"></div>
+                <div className="pd-browser" style={{ backgroundColor: "#59b256" }}>
+                    <div className="pd-circle"></div>
+                    <div className="pd-circle"></div>
+                    <div className="pd-circle"></div>
                 </div>
                 <div style={{ width: '70%', margin: '0 auto' }}>
                     <Swiper slidesPerView={1} pagination={{

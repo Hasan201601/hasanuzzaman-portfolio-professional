@@ -21,17 +21,17 @@ const About = () => {
           Seeking for a position as react developer with the skill of content management system and ability
           to work under tight schedules.
         </p>
-        <div className="a-award">
-          <div className="a-award-texts">
-
-            <h4 className="a-award-title">SKills</h4>
-            <p className="a-award-desc">
-              HTML5, CSS3, JavaScript, ES6, React JS, Express JS, Node JS, MongoDb
+        <div className="a-info">
+          <div className="a-info-texts">
+            <h4 className="a-info-title">SKills</h4>
+            <p className="a-info-desc">
+              HTML5, CSS3, JavaScript, ES6, React JS, Redux, Express JS, Node JS, MongoDb
             </p>
-            <h4 className="a-award-title" style={{ marginTop: '20px' }}>Education</h4>
-            <p className="a-award-desc">
+            <h4 className="a-info-title" style={{ marginTop: '20px' }}>Education</h4>
+            <p className="a-info-desc">
               Shahjalal University of Science and Technology, Sylhet 3114
             </p>
+            <button><a target="_blank" href="https://github.com/Hasan201601" className="a-info-link" rel="noreferrer">Visit my GitHub Profile</a></button>
           </div>
         </div>
       </div>
