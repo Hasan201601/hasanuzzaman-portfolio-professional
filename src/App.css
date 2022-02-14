@@ -543,10 +543,12 @@ button {
   margin-left: 12px;
   padding: 10px 20px;
   text-transform: capitalize;
+  border:1px solid transparent
 }
-.menu-tab-btn:active{
+.active-btn{
   background-color: #1b2531;
   color: white;
+  border:1px solid white
 }
 
 /* Project details */
