@@ -85,7 +85,7 @@ span {
     width: 50px;
     height: 25px;
     border-radius: 20px;
-    border: 1pz solid #999;
+    border: 1px solid #999;
     background-color: white;
     position: fixed;
     top: 10px;
@@ -213,11 +213,10 @@ span {
   
     .i-left-wrapper {
     
-      
+      padding: 0px;
       align-items: center;
       justify-content: center;
       text-align: center;
-      height: 100%;
     }
   
     .i-desc{
@@ -230,10 +229,9 @@ span {
 
 /* About Section */
 .a {
-    height: 100vh;
     display: flex;
     align-items: center;
-    min-height: 100vh;
+    margin-bottom: 120px;
   }
   
   .a-left {
@@ -242,7 +240,6 @@ span {
     align-items: center;
     justify-content: center;
     position: relative;
-    height: 100%;
   }
   
   .a-right {
@@ -308,23 +305,21 @@ span {
       .a{
         flex-direction: column;
         text-align: center;
-        margin-top: 50px;
+        margin-bottom: 10px;
       }
   
       .a-left {
         width: 100%;
+        padding: 20px 0;
       }
   
       .a-card {
         height: 30vh;
       }
   
-      .a-card.bg, .a-info {
-        display: none;
-      }
-  
       .a-right{
         padding: 20px;
+        margin-bottom: 30px;
       }
   }
 
@@ -343,7 +338,6 @@ span {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    min-height: 70vh;
   }
   
   .pl-texts {
@@ -367,6 +361,9 @@ span {
   }
   
   @media screen and (max-width: 480px) {
+    .ph{
+      padding: 5px 10px;
+    }
     .pl {
       padding: 10px;
     }
@@ -375,18 +372,15 @@ span {
       width: 100%;
     }
   
-    .pl-desc {
-      display: none;
-    }
     .pl-title{
-      font-size: 38px;
+      font-size: 26px;
     }
 }
 
 /* contact section */
 .c {
-  min-height: 80vh;
   position: relative;
+  margin-bottom: 70px;
 }
 .c-bg {
   width: 20px;
@@ -454,10 +448,17 @@ button {
   background-color: #59b256;
   color: white;
   font-weight: 500;
+  border-radius: 2px;
   cursor: pointer;
 }
 
 @media screen and (max-width: 480px) {
+  .c{
+    margin: 70px 0;
+  }
+  .c-bg{
+    width: 8px;
+  }
     .c-wrapper {
     flex-direction: column;
     padding: 0px 50px;
@@ -471,6 +472,9 @@ button {
     }
     .c-desc {
     display: none;
+    }
+    button{
+      padding: 10px;
     }
 }
 
@@ -549,6 +553,11 @@ button {
   background-color: #1b2531;
   color: white;
   border:1px solid white
+}
+@media screen and (max-width:480px) {
+  .menu-tab-btn{
+    padding: 7px 11px;
+  }
 }
 
 /* Project details */
@@ -634,6 +643,25 @@ button {
     padding: 10px 0;
 }
 .f-a{
-  margin: 0;
-  padding: 0;
+  text-decoration: none; 
+  margin-left: 12px;
+  font-size: 30px
+}
+.f-t{
+  text-align: center; font-size: 18px; font-weight: "600"
+}
+.f-c{
+  margin-top: 0; padding-bottom: 5px
+}
+@media screen and (max-width:480px) {
+  .f-a{
+    font-size: 22px;
+    margin-left: 6px
+  }
+  .f-t{
+    font-size: 16px;
+  }
+  .f-c{
+    font-size: 14px;
+  }
 }

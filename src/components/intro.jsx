@@ -1,7 +1,11 @@
+import { useContext } from "react";
+import { ThemeContext } from "../context";
 
 const Intro = () => {
+  const theme = useContext(ThemeContext);
+  const darkMode = theme.state.darkMode;
   return (
-    <div className="i">
+    <div className="i" id="home">
       <div className="i-left">
         <div className="i-left-wrapper">
           <h2 className="i-intro">Hello, My name is</h2>
@@ -27,9 +31,10 @@ const Intro = () => {
           height="75"
           viewBox="0 0 75 75"
           fill="none"
-          stroke="black"
+          stroke={darkMode ? "white" : "black"}
           className="i-scroll"
           xmlns="http://www.w3.org/2000/svg"
+          style={{ color: darkMode ? "white" : "black" }}
         >
           <g id="scroll">
             <path

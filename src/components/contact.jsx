@@ -66,8 +66,8 @@ const Contact = () => {
             <input style={{ backgroundColor: darkMode && "#333", color: darkMode && "white" }} type="text" placeholder="Subject" name="user_subject" />
             <input required style={{ backgroundColor: darkMode && "#333", color: darkMode && "white" }} type="text" placeholder="Email" name="user_email" />
             <textarea required style={{ backgroundColor: darkMode && "#333", color: darkMode && "white" }} rows="5" placeholder="Message" name="message" />
-            <button >{isProcessing ? "Sending" : done ? "Sent" : "Submit"}</button>
-            {done && "Thank you... I will reply you soon"}
+            <button >{isProcessing ? "Sending" : done ? "Send Another" : "Submit"}</button>
+            <p style={{ display: "flex", alignItems: "flex-end" }}>{done && "Thank you... I will reply you soon"}</p>
           </form>
         </div>
       </div>

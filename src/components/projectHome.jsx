@@ -1,8 +1,10 @@
 import React from 'react';
+import { useHistory } from 'react-router-dom';
 import { projects } from '../data/projectsData';
 import Product from './project';
 
 const ProjectHome = () => {
+    const history = useHistory()
     return (
         <div>
             <div className="ph" >
@@ -17,6 +19,7 @@ const ProjectHome = () => {
                         <Product key={item.id} item={item} />
                     ))}
                 </div>
+                <button style={{ margin: "30px 0" }} onClick={() => history.push("/projects")}>View More</button>
             </div>
         </div>
     );

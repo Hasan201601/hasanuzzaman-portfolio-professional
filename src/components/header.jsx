@@ -19,7 +19,7 @@ const Header = () => {
             <IconContext.Provider value={{ color: 'white' }}>
                 <div className='navbar'>
                     <Link to='#' className='menu-bars'>
-                        <FaIcons.FaBars style={{ color: "#59b256" }} onClick={showSidebar} />
+                        <FaIcons.FaBars style={{ color: darkMode ? "white" : "#59b256" }} onClick={showSidebar} />
                     </Link>
                 </div>
                 <nav className={sidebar ? 'nav-menu active' : 'nav-menu'} style={{ backgroundColor: darkMode ? 'black' : '#59b256', color: darkMode ? '#59b256' : 'black' }}>

@@ -6,7 +6,7 @@ import ProjectHome from "../components/projectHome";
 
 const Home = () => {
     return (
-        <div>
+        <div >
             <Intro />
             <About />
             <ProjectHome />

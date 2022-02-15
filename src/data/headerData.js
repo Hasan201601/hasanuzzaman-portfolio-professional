@@ -7,7 +7,7 @@ import { CgDisplayGrid, CgUser } from 'react-icons/cg'
 export const HeaderData = [
     {
         title: 'Home',
-        path: '/',
+        path: '/home#home',
         icon: <AiIcons.AiFillHome />,
         cName: 'nav-text'
     }, {
